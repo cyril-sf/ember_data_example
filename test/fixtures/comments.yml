@@ -1,0 +1,12 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  body: MyString
+  messageable_id: 1
+  messageable_type: MyString
+
+two:
+  body: MyString
+  messageable_id: 1
+  messageable_type: MyString
