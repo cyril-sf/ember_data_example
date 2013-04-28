@@ -15,7 +15,7 @@ end
 
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 gem 'jquery-rails'
-gem 'ember-rails', github: 'emberjs/ember-rails'
+gem 'ember-rails', git: 'git@github.com:Cyril-sf/ember-rails.git', ref: '682a41d79f'
 
 group :test, :development do
   gem 'minitest'

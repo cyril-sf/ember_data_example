@@ -1,21 +1,22 @@
 GIT
-  remote: git://github.com/emberjs/ember-rails.git
-  revision: dea9f5c093e255c26e4dbaf55a35b345f01323b5
-  specs:
-    ember-rails (0.11.1)
-      active_model_serializers
-      barber (>= 0.4.1)
-      ember-data-source
-      ember-source
-      execjs (>= 1.2)
-      railties (>= 3.1)
-
-GIT
   remote: git://github.com/rails-api/active_model_serializers.git
   revision: 1c285772805546ee5c076c8693811e2a7206af29
   specs:
     active_model_serializers (0.5.2)
       activemodel (>= 3.0)
+
+GIT
+  remote: git@github.com:Cyril-sf/ember-rails.git
+  revision: 682a41d79fbaa9d0da2a224798335923bd1dea53
+  ref: 682a41d79f
+  specs:
+    ember-rails (0.11.1)
+      active_model_serializers
+      barber (>= 0.4.1)
+      ember-data-source
+      ember-source (= 0.0.6)
+      execjs (>= 1.2)
+      railties (>= 3.1)
 
 GEM
   remote: http://rubygems.org/
@@ -52,7 +53,7 @@ GEM
       sass (>= 3.2)
     ansi (1.4.3)
     arel (3.0.2)
-    barber (0.4.1)
+    barber (0.4.2)
       ember-source
       execjs
       handlebars-source
@@ -69,7 +70,7 @@ GEM
     colorize (0.5.8)
     ember-data-source (0.0.5)
       ember-source
-    ember-source (0.0.1)
+    ember-source (0.0.6)
       handlebars-source (>= 1.0.0.rc3, < 1.0.0.rc4)
     erubis (2.7.0)
     eventmachine (1.0.1)
@@ -78,7 +79,7 @@ GEM
     faye-websocket (0.4.7)
       eventmachine (>= 0.12.0)
     ffi (1.4.0)
-    handlebars-source (1.0.0.rc.3)
+    handlebars-source (1.0.0.rc3)
     hike (1.2.1)
     http_parser.rb (0.5.3)
     i18n (0.6.4)
