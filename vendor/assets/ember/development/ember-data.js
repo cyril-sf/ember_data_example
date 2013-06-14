@@ -6621,7 +6621,7 @@ DS.Serializer = Ember.Object.extend({
 
     aliases.forEach(function(key, type) {
       plural = self.pluralize(key);
-      Ember.assert("The '" + key + "' alias has already been defined", !aliases.get(plural));
+      Ember.assert("The '" + key + "' alias has already been defined", !aliases.get(plural) || (aliases.get(key)===type));
       aliases.set(plural, type);
     });
 
