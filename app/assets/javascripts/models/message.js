@@ -1,6 +1,6 @@
 App.Message = DS.Model.extend({
-  user: DS.belongsTo('App.User'),
-  comments: DS.hasMany('App.Comment', {
+  user: DS.belongsTo('user'),
+  comments: DS.hasMany('comment', {
     inverse: 'message'
   })
 });
