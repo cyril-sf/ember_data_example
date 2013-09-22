@@ -11,16 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130614105148) do
-
-  create_table "comments", :force => true do |t|
-    t.string   "body"
-    t.integer  "messageable_id"
-    t.string   "messageable_type"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-    t.integer  "user_id"
-  end
+ActiveRecord::Schema.define(:version => 20130922002644) do
 
   create_table "contacts", :force => true do |t|
     t.string   "first_name"
@@ -31,18 +22,22 @@ ActiveRecord::Schema.define(:version => 20130614105148) do
     t.text     "notes"
   end
 
+  create_table "messages", :force => true do |t|
+    t.string   "type"
+    t.string   "title"
+    t.string   "body"
+    t.integer  "user_id"
+    t.integer  "messageable_id"
+    t.string   "messageable_type"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
   create_table "phone_numbers", :force => true do |t|
     t.string   "number"
     t.integer  "contact_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "posts", :force => true do |t|
-    t.string   "title"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

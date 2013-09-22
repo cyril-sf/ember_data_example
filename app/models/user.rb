@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
   attr_accessible :name
-  has_many :messages, as: :messageable
+  has_many :messages
 end
